@@ -1,4 +1,4 @@
-x = {'a': 37, 'b': 42,
+gox = {'a': 37, 'b': 42,
      'c': 927}
 very_long_variable_name = {'field': 1,
                            'is_debug': True}
