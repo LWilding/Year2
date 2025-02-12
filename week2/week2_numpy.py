@@ -83,3 +83,12 @@ print(a)
 b += a
 print(b)
 
+# a += b # b is not automatically converted to integer type
+
+a = np.ones(3, dtype=np.int32)
+b = np.linspace(0, pi, 3)
+print(b.dtype.name)
+
+c = a = b
+print(c)
+
