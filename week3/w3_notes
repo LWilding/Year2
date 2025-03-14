@@ -1,0 +1,8 @@
+Categorical Values
+
+There are many data that are repetitive for example gender, country and codes are always repetitive.
+Categorical variables can take on only a limited discreate values(such as wine classes, iris flower classes).
+The categorical data type is useful in the case of distinct classes.
+A string variable consisting of only a few different values. Converting such a string variable to a categorical variable will save memory.
+The lexical order of a variable is not the same as the logical order(“one”, “two”, “three”). By Converting to a categorical and specifying an order on the categories, sorting and min/max will use the logical order instead of the lexical order.
+As a signal to other python libraries that this column should be treated as a categorical variable(e.g. to use suitable statistical methods or plot types)

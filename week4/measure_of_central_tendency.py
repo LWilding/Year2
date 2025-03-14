@@ -4,8 +4,6 @@ import numpy as np
 import seaborn as sns
 import os
 
-
-
 # create a dictionary of series
 
 d = {'Name': pd.Series(['Tom', 'James', 'Ricky', 'Vin', 'Steve', 'Smith', 'Jack', 'Lee',
@@ -44,11 +42,10 @@ s = np.random.normal(mu, sigma, 1000)
 count, bins, ignored = plt.hist(s, 20, density=True)
 
 # Plot the distribution curve
-plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *
-         np.exp(- (bins - mu) **2 / (2 * sigma**2) ),linewidth=3,
-                color='y')
+plt.plot(bins, 1 / (sigma * np.sqrt(2 * np.pi)) *
+         np.exp(- (bins - mu) ** 2 / (2 * sigma ** 2)), linewidth=3,
+         color='y')
 plt.show()
-
 
 # Correlation
 
@@ -62,4 +59,4 @@ plt.show()
 file_path = os.path.expanduser("~/Downloads/data(1).csv")
 df_corr = pd.read_csv(file_path)
 print(df_corr.head)
-#print(df_corr.corr())
+# print(df_corr.corr())
